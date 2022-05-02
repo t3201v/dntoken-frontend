@@ -21,20 +21,10 @@ export default function NavBar() {
             </button>
 
             <ul className="fixed top-0 bottom-0 left-0 right-0 z-20 flex flex-col items-center justify-center py-10 text-3xl bg-white md:text-base md:flex md:flex-row md:relative md:bg-transparent">
-              <li className="pt-10 text-base text-gray-700 cursor-pointer dark:text-slate-300 hover:text-gray-900 hover:dark:text-slate-50 lg:text-lg md:pt-0">
-                <div>Feature</div>
-              </li>
-              <li className="pt-10 text-base text-gray-700 cursor-pointer dark:text-slate-300 hover:text-gray-900 hover:dark:text-slate-50 lg:text-lg md:pt-0 md:ml-5 lg:ml-10">
-                <div>Marketplace</div>
-              </li>
-              <li className="pt-10 text-base text-gray-700 cursor-pointer dark:text-slate-300 hover:text-gray-900 hover:dark:text-slate-50 lg:text-lg md:pt-0 md:ml-5 lg:ml-10">
-                <div>Company</div>
-              </li>
-              <li className="pt-10 text-base text-gray-700 cursor-pointer dark:text-slate-300 hover:text-gray-900 hover:dark:text-slate-50 lg:text-lg md:pt-0 md:ml-5 lg:ml-10">
-                <div>Features</div>
-              </li>
-              <li className="pt-10 text-base text-gray-700 cursor-pointer dark:text-slate-300 hover:text-gray-900 hover:dark:text-slate-50 lg:text-lg md:pt-0 md:ml-5 lg:ml-10">
-                <div>Contact</div>
+              <li
+                onClick={() => navigate("/scan")}
+                className="pt-10 text-base text-gray-700 cursor-pointer dark:text-slate-300 hover:text-gray-900 hover:dark:text-slate-50 lg:text-lg md:pt-0">
+                <div>Analytics</div>
               </li>
             </ul>
           </div>

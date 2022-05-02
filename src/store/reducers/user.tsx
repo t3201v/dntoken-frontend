@@ -25,7 +25,10 @@ export const userSlice = createSlice({
       state.isLoggedIn = action.payload.isLoggedIn;
     },
     remove: (state) => {
-      state = initialState;
+      state.priKey = "";
+      state.pubKey = "";
+      state.addr = "";
+      state.isLoggedIn = false;
     },
   },
 });
