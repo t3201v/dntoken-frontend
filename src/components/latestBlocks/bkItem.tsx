@@ -25,7 +25,7 @@ export default function BkItem({ b }: { b: IBlock }) {
           <div className="flex items-center justify-start">
             Miner:
             {user.addr === b.miner ? (
-              <div className="inline-block ml-1 font-semibold text-orange-500 truncate hover:text-blue-300 w-52 hover:dark:text-mt-pink-200 dark:text-mt-pink-300">
+              <div className="inline-block ml-1 font-semibold text-orange-500 truncate hover:text-orange-300 w-52">
                 Me
               </div>
             ) : (

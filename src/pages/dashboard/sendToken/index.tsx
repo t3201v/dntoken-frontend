@@ -83,6 +83,7 @@ export default function SendToken(props: HTMLProps<HTMLDivElement>) {
               type="number"
               min="0"
               name="amount"
+              step="0.0001"
               onChange={handleChangeAmount}
               placeholder="Amount"
               onClick={(e) => e.currentTarget.select()}
